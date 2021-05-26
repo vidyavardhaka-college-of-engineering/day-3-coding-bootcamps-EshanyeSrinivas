@@ -7,12 +7,17 @@
 #include<stdio.h>
 int main()
 {
-    int n;
+    int n,a=0,b=1,c=0;
     printf("Enter the value for n\n");
     scanf("%d", &n);
+    printf("\n%d %d",a, b);
 
-    //Write your code here
-    
-
+   for(int i=0;i<n-2;i++)
+    {
+      c=a+b;
+      a=b;
+      b=c;
+      printf(" %d",c);
+    }
     return 0;
 }
